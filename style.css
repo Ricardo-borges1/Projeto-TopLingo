@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popppins', sans-serif;
+}
+
+.roxo{
+    background-color: #5B0B9B;
+    position: fixed;
+    height: 100%;
+    width: 50px;
+}
+
+.titulo{
+    color: #5B0B9B;
+    position: absolute;
+    padding-left: 780px;
+    font-size: 70px;
+    font-weight: bold;
+    top: 70px;
+}
