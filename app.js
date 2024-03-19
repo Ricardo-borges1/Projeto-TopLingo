@@ -1,3 +1,9 @@
+const chk = document.getElementById('chk')
+
+chk.addEventListener('change', () =>{
+    document.body.classList.toggle('dark')
+})
+
 const texto = document.querySelector("#texto");
 const linguas = document.querySelectorAll("select");
 const traducao = document.querySelector("#traducao");
@@ -10,17 +16,19 @@ const linguagens = {
 
 linguas.forEach((select) => {
   for (let id in linguagens) {
-    let option = document.createElement("option");
-    option.value = id;
-    option.textContent = linguagens[id];
+    let escolhas = document.createElement("option");
+    escolhas.value = id;
+    escolhas.textContent = linguagens[id];
     if ((select.classList.contains("linguas") && id === "pt-BR") ||
-        (select.classList.contains("linguas2") && id === "en-GB")) {
-      option.selected = true;
+        (select.classList.contains("linguas2") && id === "en-GB")) 
+        {
+      escolhas.selected = true;
     }
-    select.appendChild(option);
+    select.appendChild(escolhas);
   }
 });
 
+//validação de texto
 botao.addEventListener("click", () => {
   if (texto.value) {
     traducaoApi();
@@ -32,6 +40,8 @@ botao.addEventListener("click", () => {
 function traducaoApi() {
   const lang1 = linguas[0].value;
   const lang2 = linguas[1].value;
+  
+
   fetch(
     `https://api.mymemory.translated.net/get?q=${texto.value}&langpair=${lang1}|${lang2}`
   )
