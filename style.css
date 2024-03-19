@@ -50,12 +50,12 @@
    
   textarea {
     width: 55vw;
-    height: 60px;
+    min-height: 60px; 
+    max-height: 200px; 
     border-bottom: 3px solid #5B0B9B;
     padding: 12px 10px;
-    overflow: hidden;
-    line-height: 0.3;
-    
+    overflow-y: auto; 
+    resize: none; 
   }
   
   .espaco{
