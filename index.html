@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>TopLingo</title>
-</head>
-<body>
-    <header>
-        <div class="roxo"></div>
-        <div class="titulo">TopLingo</div>
-    </header>
-    
-    <main>
 
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>TopLingo</title>
+</head>
+
+<body>
+  
+    <div class="roxo"></div>
+
+  <header>
+    <div class="titulo">
+        TopLingo
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+        <div class="card">
+          <div class="espaco">
+            <textarea id="texto" placeholder= "Escreva aqui"></textarea>
+            <select class="linguas"></select>
+          </div>
+          <div class="card2">
+            <textarea id="traducao" placeholder="tradução" disabled></textarea>
+            <select class="linguas2"></select>
+          </div>
+        </div>
+        <button id="botao">TRADUZIR</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p> Ricardo e Ana Luiza - DS2BIT-B</p>
+  </footer>
+
 </body>
+
 </html>

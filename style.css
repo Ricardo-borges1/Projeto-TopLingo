@@ -1,18 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Popppins', sans-serif;
-}
-
-.roxo{
-    background-color: #5B0B9B;
-    position: fixed;
-    height: 100%;
-    width: 50px;
-}
-
-.titulo{
+  }
+  
+  .titulo{
     color: #5B0B9B;
     position: absolute;
     padding-left: 780px;
@@ -20,3 +13,73 @@
     font-weight: bold;
     top: 70px;
 }
+
+  header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+  
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+  }
+  
+  
+  .roxo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 3vw;
+    height: 100vh;
+    background-color: #5B0B9B;
+  }
+  
+  footer {
+    text-align: center;
+    font-weight: bold;
+    color: #5B0B9B;
+    font-size: 20px;
+  }
+   
+  textarea {
+    width: 55vw;
+    height: auto;
+    border-bottom: 3px solid #5B0B9B;
+    padding: 12px 10px;
+    overflow: hidden;
+    line-height: 0.3;
+  }
+  
+  .espaco{
+    padding-bottom: 40px;
+  }
+  
+  #botao{
+    font-weight: bold;
+    color: #5B0B9B;
+    bottom: 350px;
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.5s ease;
+  }
+
+select{
+    position: absolute;
+    color: #5B0B9B;
+    right: 290px;
+    width: 120px;
+    text-align: center;
+    height: 35px;
+    
+}
+
