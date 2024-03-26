@@ -22,6 +22,38 @@
     margin-top: 1%;
   }
   
+  .containerFalar{
+    
+    bottom: 180px;
+    margin-left: 430px;
+    position: fixed;
+    align-items: center;
+  }
+
+  .containerFalar p{
+    font-weight: bold;
+    position: fixed;
+    margin-left: 200px;
+  }
+
+  .microfone{
+    width: 34px;
+    position: absolute;
+    bottom: 120px;
+    left: 360px;
+  }
+  .botaoFalar{
+    font-weight: bold;
+    color: #5B0B9B;
+    bottom: 120px;
+    margin-left: 200px;
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.5s ease;
+  }
   
   main {
     display: flex;
@@ -84,6 +116,10 @@ select{
     
 }
 
+.luz-apagada {
+  color: white;
+  background-color: black;
+}
 
 
 body.dark {

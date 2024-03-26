@@ -12,6 +12,12 @@ const botao = document.querySelector("#botao");
 const linguagens = {
   "en-GB": "Inglês",
   "pt-BR": "Português",
+  "es-ES" : "Espanhol",
+  "ru-RU": "Russo",
+  "fr-Fr" : "Francês",
+  "it-It" : "Italiano",
+  "ja-Ja" : "Japonês",
+  "Ar-Ar" : "Árabe"
 };
 
 linguas.forEach((select) => {

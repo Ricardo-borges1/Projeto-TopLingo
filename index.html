@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <script src="app.js" defer></script>
   <title>TopLingo</title>
 </head>
@@ -42,8 +43,6 @@
             <select class="linguas"></select>
           </div>
 
-
-
           <div class="card2">
             <textarea id="traducao" placeholder="tradução" rows="3" cols="50"></textarea>
             <select class="linguas2"></select>
@@ -51,9 +50,19 @@
         </div>
 
 
+
         <button id="botao">TRADUZIR</button>
       </div>
   </main>
+
+
+  <div class="containerFalar">
+    <p>Este site utiliza comandos por voz. Diga alice para mudar a cor de fundo. É necessário ter um microfone. </p>   
+    <button class="botaoFalar" id="speakBtn">FALAR</button>
+    <img class="microfone" src="./img/microfone-removebg-preview.png" alt="">
+</div>
+
+
 
   <footer>
     <p> Ricardo e Ana Luiza - DS2BIT-B</p>
