@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Função para traduzir o texto
+    
     function traduzirTexto(texto) {
         if (texto) {
             traducaoApi(texto);
@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Função para fazer a tradução usando uma API
+    
     function traducaoApi(texto) {
         const lang1 = linguas[0].value;
         const lang2 = linguas[1].value;
@@ -56,11 +56,11 @@ window.addEventListener('DOMContentLoaded', function() {
         .then((res) => res.json())
         .then((data) => {
             traducao.value = data.responseData.translatedText;
-            falar(data.responseData.translatedText); // Chamando a função para falar o texto traduzido
+            falar(data.responseData.translatedText); 
         });
     }
 
-    // Função para falar o texto
+   
     function falar(texto) {
         const voz = window.speechSynthesis;
         const utterance = new SpeechSynthesisUtterance(texto);
@@ -73,21 +73,21 @@ window.addEventListener('DOMContentLoaded', function() {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         const recognition = new SpeechRecognition();
 
-        // Iniciando reconhecimento automaticamente
+        
         recognition.start();
         
         let nataliaDetected = false;
 
-        // Reconhecimento automático
+      
         recognition.addEventListener('result', function(e) {
             const result = e.results[0][0].transcript;
             
-            // Verificando se "NATALIA" foi detectado
+            // Verificando se "NATALIA" foi detectado e pode ser usado
             if (result.trim().toUpperCase() === 'NATÁLIA') {
                 nataliaDetected = true;
                 recognition.stop();
                 setTimeout(() => {
-                    recognition.start(); // Continuar reconhecimento
+                    recognition.start(); 
                 }, 2000);
             } else if (nataliaDetected) {
                 texto.value = result;
