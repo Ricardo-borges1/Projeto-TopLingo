@@ -96,7 +96,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     document.body.classList.toggle('luz-apagada');
                 }
             }
-        }, false);
+        });
 
         speakBtn.addEventListener('click', function(e) {
             recognition.start();
@@ -109,4 +109,4 @@ window.addEventListener('DOMContentLoaded', function() {
         traduzirTexto(texto.value);
     });
 
-}, false);
+});
